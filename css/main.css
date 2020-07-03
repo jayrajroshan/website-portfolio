@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 .home {
   background: -webkit-gradient(linear, left top, right bottom, from(#140841), to(#360e36));
   background: linear-gradient(to bottom right, #140841, #360e36);
@@ -53,6 +54,12 @@
 .nav-container .hovered-link {
   border: none;
   color: #140841;
+}
+
+@media (max-width: 600px) {
+  .nav-container .hovered-link {
+    color: white;
+  }
 }
 
 .nav-container nav {
@@ -241,7 +248,7 @@
 
 .scroll {
   position: absolute;
-  top: 80%;
+  top: 89%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -316,27 +323,31 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: .5fr 1fr .5fr;
+      grid-template-rows: .5fr 1fr .5fr;
   overflow-x: hidden;
 }
 
 .about img {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   width: 90%;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  padding-top: 10rem;
+}
+
+@media (max-width: 600px) {
+  .about img {
+    padding-top: 0rem;
+  }
 }
 
 .about h1 {
   font-size: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -350,6 +361,9 @@
 }
 
 .about p {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
   padding-top: -3rem;
   font-size: 2rem;
   font-weight: 100;
@@ -808,7 +822,6 @@ html {
 @media (max-width: 600px) {
   html {
     font-size: 50%;
-    cursor: pointer;
   }
 }
 

@@ -3,20 +3,23 @@
     padding: 0rem 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
     overflow-x: hidden;
 
 
     img {
-        grid-row: 1/3;
+        grid-row: 1/4;
         grid-column: 1/2;
         width: 90%;
-        align-self: auto;
+        padding-top: 10rem;
+        @media (max-width:600px) {
+            padding-top: 0rem;
+            }
     }
 
     h1 {
         font-size: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
         align-self: end;
 
         @media (max-width:600px) {
@@ -25,6 +28,7 @@
     }
 
     p {
+        grid-row: 2/4;
         padding-top: -3rem;
         font-size: 2rem;
         font-weight: 100;

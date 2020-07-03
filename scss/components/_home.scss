@@ -40,6 +40,10 @@
     .hovered-link {
     border: none;
     color: #140841;
+
+        @media (max-width:600px) {
+            color: white;
+        }
     }
 
     nav {
@@ -181,7 +185,7 @@
 
 .scroll {
     position: absolute;
-    top: 80%;
+    top: 89%;
     left: 50%;
     transform: translate(-50%, -50%);
 
