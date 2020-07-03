@@ -56,9 +56,9 @@
     }
 
     .fa {
-        margin: 1rem;
+        margin: 1rem 1rem 0 0;
         padding: 20px;
-        font-size: 30px;
+        font-size: 40px;
         width: auto;
         height: auto;
         text-align: center;
@@ -67,12 +67,32 @@
         background: white;
         color: rgb(71, 10, 71);
 
-        &:hover {
-            opacity: .7;
-        }
-
         @media (max-width:600px) {
             padding: 15px;
+        }
+    }
+
+    .fa-linkedin{
+        &:hover {
+            color: rgb(32, 85, 199);
+        }
+    }
+
+    .fa-instagram{
+        &:hover {
+            color: rgb(158, 14, 139);
+        }
+    }
+
+    .fa-github{
+        &:hover {
+            color: rgb(120, 120, 131);
+        }
+    }
+
+    .fa-whatsapp{
+        &:hover {
+            color: rgb(8, 143, 37);
         }
     }
 }

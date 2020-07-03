@@ -62,15 +62,15 @@
 
     &:hover {
         transition: all 0.2s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-        top: -4px;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.8);
+        top: -10px;
 
       }
 
       &:before {
         content: "";
         position: absolute;
-        z-index: -1;
+        z-index: -2;
         top: -30px;
         right: -16px;
         background: #00838d;
@@ -79,7 +79,7 @@
         border-radius: 32px;
         transform: scale(2);
         transform-origin: 50% 50%;
-        transition: transform 0.15s ease-out;
+        transition: transform 0.3s ease-out;
       }
 
       &:hover:before {
@@ -91,7 +91,7 @@
     flex: 1;
   }
   .card_content {
-    padding: 1rem;
+    padding: 1.5rem;
     flex: 1.5;
     background: linear-gradient(to bottom left, #1e7954 40%, #445c9e 100%);
   }

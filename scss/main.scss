@@ -1,11 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+@import 'components/home';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/headline';
+
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    cursor: none;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
     @media (max-width:600px) {
         font-size: 50%;
+        cursor: pointer;
     }
 }
 
@@ -20,13 +34,5 @@ body {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
     min-height: 100vh;
-
 }
-
-
-@import 'components/home';
-@import 'components/about';
-@import 'components/skills';
-@import 'components/contact';
-@import 'components/footer';
 
