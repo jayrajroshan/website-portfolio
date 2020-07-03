@@ -62,7 +62,7 @@
 
     &:hover {
         transition: all 0.2s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.8);
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
         top: -10px;
 
       }
@@ -91,7 +91,7 @@
     flex: 1;
   }
   .card_content {
-    padding: 1.5rem;
+    padding: 1rem;
     flex: 1.5;
     background: linear-gradient(to bottom left, #1e7954 40%, #445c9e 100%);
   }
