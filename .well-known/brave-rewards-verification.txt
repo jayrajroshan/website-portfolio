@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jayraj.co.in
+Token: 646a2b85a27355770391afb665c070f46206681bef93c5d240e225b6b56dad1b
