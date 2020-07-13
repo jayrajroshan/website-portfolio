@@ -1,4 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.preloader {
+  background: -webkit-gradient(linear, left top, right bottom, from(#140841), to(#360e36));
+  background: linear-gradient(to bottom right, #140841, #360e36);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+}
+
+.preloader #preload {
+  padding: 0 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.5 ease;
+  transition: opacity 0.5 ease;
+}
+
+.preloader #preload path:nth-child(2) {
+  stroke-dasharray: 375.71710205078125px;
+  stroke-dashoffset: 375.71710205078125px;
+  -webkit-animation: line-anim 2s ease-in forwards infinite alternate;
+          animation: line-anim 2s ease-in forwards infinite alternate;
+}
+
+.preloader #preload path:nth-child(3) {
+  stroke-dasharray: 480.3223571777344px;
+  stroke-dashoffset: 480.3223571777344px;
+  -webkit-animation: line-anim 2s ease forwards infinite alternate;
+          animation: line-anim 2s ease forwards infinite alternate;
+}
+
+.preloader #preload path:nth-child(4) {
+  stroke-dasharray: 445.615234375px;
+  stroke-dashoffset: 445.615234375px;
+  -webkit-animation: line-anim 2s ease forwards infinite alternate;
+          animation: line-anim 2s ease forwards infinite alternate;
+}
+
+.preloader #preload path:nth-child(5) {
+  stroke-dasharray: 238.78118896484375px;
+  stroke-dashoffset: 238.78118896484375px;
+  -webkit-animation: line-anim 2s ease forwards infinite alternate;
+          animation: line-anim 2s ease forwards infinite alternate;
+}
+
+.preloader #preload path:nth-child(6) {
+  stroke-dasharray: 480.32086181640625px;
+  stroke-dashoffset: 480.32086181640625px;
+  -webkit-animation: line-anim 2s ease forwards infinite alternate;
+          animation: line-anim 2s ease forwards infinite alternate;
+}
+
+.preloader #preload path:nth-child(7) {
+  stroke-dasharray: 315.7021179199219px;
+  stroke-dashoffset: 315.7021179199219px;
+  -webkit-animation: line-anim 2s ease forwards infinite alternate;
+          animation: line-anim 2s ease forwards infinite alternate;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.preload-fin {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .home {
   background: -webkit-gradient(linear, left top, right bottom, from(#140841), to(#360e36));
   background: linear-gradient(to bottom right, #140841, #360e36);
