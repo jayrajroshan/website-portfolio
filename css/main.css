@@ -89,6 +89,16 @@
   max-width: 1200px;
 }
 
+.update {
+  background-color: black;
+}
+
+.update h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  height: 8vh;
+}
+
 .nav-container {
   padding: 2rem 0rem;
   display: -webkit-box;
@@ -105,8 +115,8 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   pointer-events: none;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transition-property: background, -webkit-transform;
   transition-property: background, -webkit-transform;
   transition-property: transform, background;
@@ -193,12 +203,12 @@
 }
 
 .nav-container nav ul li a {
-  padding: .5rem;
+  padding: 0.5rem;
   color: white;
   text-decoration: none;
-  border-radius: .8rem;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  border-radius: 0.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 600px) {
@@ -228,9 +238,9 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: .2fr 1fr .2fr 1fr .1fr;
-      grid-template-rows: .2fr 1fr .2fr 1fr .1fr;
-      grid-template-areas: ". ." "h1 img" "h2 img" "resume img" ". .";
+  -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr 0.1fr;
+      grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.1fr;
+      grid-template-areas: '. .' 'h1 img' 'h2 img' 'resume img' '. .';
 }
 
 .home-content h1 {
@@ -328,7 +338,7 @@
 
 .scroll {
   position: absolute;
-  top: 89%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -707,39 +717,6 @@
 
 .social .fa-whatsapp:hover {
   color: #088f25;
-}
-
-.footer {
-  background: -webkit-gradient(linear, left top, right bottom, from(#140841), to(#360e36));
-  background: linear-gradient(to bottom right, #140841, #360e36);
-  padding: 0 10rem 3rem 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer h2 {
-  font-weight: lighter;
-}
-
-.footer h2 a {
-  text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 600px) {
-  .footer h2 {
-    justify-self: flex-end;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    padding: 1rem;
-  }
 }
 
 .cd-headline {
