@@ -721,6 +721,39 @@
   color: #088f25;
 }
 
+.footer {
+  background: -webkit-gradient(linear, left top, right bottom, from(#140841), to(#360e36));
+  background: linear-gradient(to bottom right, #140841, #360e36);
+  padding: 0 10rem 3rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer h2 {
+  font-weight: lighter;
+}
+
+.footer h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .footer h2 {
+    justify-self: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 1rem;
+  }
+}
+
 .cd-headline {
   font-size: 3rem;
   line-height: 1.2;

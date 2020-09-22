@@ -1,24 +1,23 @@
 .footer {
-    background: linear-gradient(to bottom right, #140841, rgb(54, 14, 54));
-    padding: 0 10rem 3rem 10rem;
-    display: flex;
-    justify-content: space-between;
+  background: linear-gradient(to bottom right, #140841, rgb(54, 14, 54));
+  padding: 0 10rem 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
 
-    h2 {
-        font-weight: lighter;
+  h2 {
+    font-weight: lighter;
 
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
-        @media (max-width:600px) {
-           justify-self: flex-end;
-        }
+    a {
+      text-decoration: none;
+      color: white;
     }
 
-    @media (max-width:600px) {
-        padding: 1rem;
+    @media (max-width: 600px) {
+      justify-self: flex-end;
     }
+  }
 
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
 }
